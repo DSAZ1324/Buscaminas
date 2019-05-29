@@ -16,6 +16,9 @@ class Casilla:
     def numero(self):
         return self.num
 
+    def estad(self):
+        return self.estado
+
     def alerta_bomba(self, opcion):
         if self.valor == '*':
             self.estado = False
