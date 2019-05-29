@@ -1,0 +1,2 @@
+class Casilla:
+    pass
