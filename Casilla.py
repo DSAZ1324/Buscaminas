@@ -13,20 +13,14 @@ class Casilla:
         self.num = random.randint(0, 4)
         self.valor = ''
 
-    def posicion(self):
-        return self.x, self.y
-
-    def estado(self):
-        return self.estado
+    def numero(self):
+        return self.num
 
     def alerta_bomba(self, opcion):
         if self.valor == '*':
             self.estado = False
         else:
             self.estado = opcion
-
-    def numero(self):
-        return self.num
 
     def posible_bomba(self, opcion):
         if opcion == '*':
@@ -35,6 +29,3 @@ class Casilla:
             self.valor = '?'
         else:
             self.valor = ''
-
-    def obtener_bandera(self):
-        return self.valor
