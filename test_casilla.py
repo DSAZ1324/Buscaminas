@@ -42,3 +42,9 @@ class TestCasilla(TestCase):
         espero = ''
         resultado = mi_casilla.valor
         self.assertEqual(espero, resultado)
+
+    def test_estad(self):
+        mi_casilla = Casilla(3, 4)
+        espero = mi_casilla.estad()
+        resultado = mi_casilla.estad()
+        self.assertEqual(espero, resultado)
