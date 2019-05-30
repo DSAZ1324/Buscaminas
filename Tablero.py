@@ -19,4 +19,3 @@ class Tablero:
             tab.append(casilla)
             casilla = []
         return tab
-
