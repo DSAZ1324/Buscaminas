@@ -11,11 +11,9 @@ class Tablero:
 
     def crear_tablero(self):
         tab = []
-        casilla = []
         for x in range(self.ancho):
+            casilla = []
             for y in range(self.largo):
-                if len(casilla) < self.largo:
                     casilla.append(Casilla(x, y))
             tab.append(casilla)
-            casilla = []
         return tab
