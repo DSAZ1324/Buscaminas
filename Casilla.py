@@ -51,8 +51,8 @@ class Casilla:
         """
         Funcion que permite validar identificar si se tiene una posible bomba cerca
 
-        :param opcion: posibilidades para validar si hay bombas
-        :return: la posible bomba
+        :param opcion: str con posibilidades para validar si hay bombas
+        :return: la posible opcion que se tiene para marcar la bomba
         """
         if opcion == '*':
             self.valor = '*'
