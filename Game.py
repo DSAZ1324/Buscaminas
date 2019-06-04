@@ -82,6 +82,16 @@ def tablero_revelado(x, y):
 
 
 def turno_tablero(tabl, x, y):
+    """
+    Funcion que nos permite imprimir el tablero y a su vez actualizarlo luego de realizar algun
+    movimiento.
+
+    :param tabl: el tablero para el juego
+    :param x: dimensiones del tamaño para el eje x
+    :param y: dimensiones del tamaño para el eje y
+    :return: el tablero actualizado con movimientos aplicados sobre este
+
+    """
     print('  |', end='')
     for i in range(int(y)):
         if i >= 10:
