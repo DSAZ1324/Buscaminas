@@ -7,8 +7,8 @@ class Casilla:
     y = 0
 
     def __init__(self, x, y):
-        self.x = x
-        self.y = y
+        self.x = int(x)
+        self.y = int(y)
         self.estado = False
         self.num = random.randint(0, 4)
         self.valor = ''
@@ -16,14 +16,14 @@ class Casilla:
     def numero(self):
         return self.num
 
-    def estad(self):
+    def estado(self):
         return self.estado
 
-    def alerta_bomba(self, opcion):
+    def cambiar_estado(self, estado):
         if self.valor == '*':
             self.estado = False
         else:
-            self.estado = opcion
+            self.estado = estado
 
     def posible_bomba(self, opcion):
         if opcion == '*':
@@ -32,3 +32,6 @@ class Casilla:
             self.valor = '?'
         else:
             self.valor = ''
+
+    def opcion(self):
+        return self.valor

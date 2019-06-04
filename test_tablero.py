@@ -9,3 +9,8 @@ class TestTablero(TestCase):
         tablero_es = tab
         self.assertEqual(tab, tablero_es)
 
+    def test_ganar(self):
+        tablero = Tablero(8, 8)
+        espero = False
+        resultado = tablero.ganar()
+        self.assertEqual(espero, resultado)
