@@ -65,6 +65,13 @@ def minas_numeros(tab, x, y):
 
 
 def tablero_revelado(x, y):
+    """
+    Funcion que muestra el tablero aleatorio
+
+    :param x: tablero con minas y numeros para crrdenadas x
+    :param y: tablero con minas y numeros para coordenadas en y
+    :return: el tablero listo para jugar
+    """
     tabl = []
     for i in range(int(x)):
         tabll = []
