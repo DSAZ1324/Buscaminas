@@ -30,7 +30,7 @@ class Casilla:
         """
         estado actual de la casilla
 
-        :return:bool con el estado en que se encuentra la casilla
+        :return:el estado en que se encuentra la casilla
         """
 
         return self.estado
@@ -62,4 +62,10 @@ class Casilla:
             self.valor = ''
 
     def opcion(self):
+        """
+        permite validar la opciones dentro de una casilla
+
+        :return: la opcion de la casilla
+        """
+
         return self.valor
