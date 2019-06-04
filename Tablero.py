@@ -9,8 +9,8 @@ class Tablero:
         """
         crea el tablero con un tamaño indicado
 
-        :param ancho: la anchura del tablero
-        :param largo: la altura del tablero
+        :param ancho: int la anchura del tablero
+        :param largo: int la altura del tablero
         """
         self.ancho = int(ancho)
         self.largo = int(largo)

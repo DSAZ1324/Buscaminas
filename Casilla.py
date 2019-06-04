@@ -67,5 +67,4 @@ class Casilla:
 
         :return: la opcion de la casilla
         """
-
         return self.valor
