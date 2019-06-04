@@ -20,17 +20,27 @@ class Casilla:
         self.valor = ''
 
     def numero(self):
+        """
+        el numero de la casilla
+        :return: el estado del numero en la casilla
+        """
         return self.num
 
     def estado(self):
+        """
+        estado actual de la casilla
+
+        :return:bool con el estado en que se encuentra la casilla
+        """
+
         return self.estado
 
     def cambiar_estado(self, estado):
         """
         Funcion que nos permite el cambio de estado de la casilla
 
-        :param estado: el estado actual de la casilla
-        :return: el cambio de la casilla
+        :param estado: bool con el estado actual de la casilla
+        :return: el cambio de estado de la casilla
         """
         if self.valor == '*':
             self.estado = False
