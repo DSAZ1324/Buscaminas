@@ -20,12 +20,24 @@ class Casilla:
         return self.estado
 
     def cambiar_estado(self, estado):
+        """
+        Funcion que nos permite el cambio de estado de la casilla
+
+        :param estado: el estado actual de la casilla
+        :return: el cambio de la casilla
+        """
         if self.valor == '*':
             self.estado = False
         else:
             self.estado = estado
 
     def posible_bomba(self, opcion):
+        """
+        Funcion que permite validar identificar si se tiene una posible bomba cerca
+
+        :param opcion: posibilidades para validar si hay bombas
+        :return: la posible bomba
+        """
         if opcion == '*':
             self.valor = '*'
         elif opcion == '?':
