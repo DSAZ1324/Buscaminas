@@ -7,6 +7,12 @@ class Casilla:
     y = 0
 
     def __init__(self, x, y):
+        """
+        Funcion para crear una casilla
+
+        :param x: int que representa la posicion en x
+        :param y: int que representa la posicion en y
+        """
         self.x = int(x)
         self.y = int(y)
         self.estado = False
