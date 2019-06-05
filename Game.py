@@ -50,10 +50,10 @@ def minas_numeros(tab, x, y):
     """
     Funcion que permite el ingreso de cierta cantidad de minas como de numeros
 
-    :param tab: tamaño del tablero
-    :param x: cantidad de minas como de numeros para el eje en x
-    :param y: cantidad de minas como de numeros para el eje en y
-    :return: la minas y numeros para el tamaño del tablero asignado
+    :param tab:list of list con el tablero creado
+    :param x:int que representa las minas y los numeros en el tablero para el eje x
+    :param y: int que represena las minas y los numeros en el tablero para el eje y
+    :return: list of list de tablero con las parametros de minas y numeros
     """
     for i in range(int(x)):
         for j in range(int(y)):
