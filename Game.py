@@ -7,6 +7,12 @@ tab = []
 
 
 def ganar(tab):
+    """
+    funcion que permite poder ganar el juego
+
+    :param tab: lista con el tablero asignado
+    :return: la victoria si se logra
+    """
     casillas_libres = 0
     casillas_reveladas = 0
     for x in range(len(tab)):
@@ -24,6 +30,12 @@ def ganar(tab):
 
 
 def expandir(tab):
+    """
+    funcion para expandir en tamaños diferentes el tablero
+
+    :param tab: tablero para expandir
+    :return: tablero expandido
+    """
     for x in range(len(tab)):
         for y in range(len(tab[0])):
             if Casilla.estado(tab[x][y]) == 0:
@@ -35,6 +47,14 @@ def expandir(tab):
 
 
 def minas_numeros(tab, x, y):
+    """
+    Funcion que permite el ingreso de cierta cantidad de minas como de numeros
+
+    :param tab: tamaño del tablero
+    :param x: cantidad de minas como de numeros para el eje en x
+    :param y: cantidad de minas como de numeros para el eje en y
+    :return: la minas y numeros para el tamaño del tablero asignado
+    """
     for i in range(int(x)):
         for j in range(int(y)):
             if tab[i][j] == 1:
@@ -45,6 +65,13 @@ def minas_numeros(tab, x, y):
 
 
 def tablero_revelado(x, y):
+    """
+    Funcion que muestra el tablero aleatorio
+
+    :param x: tablero con minas y numeros para crrdenadas x
+    :param y: tablero con minas y numeros para coordenadas en y
+    :return: el tablero listo para jugar
+    """
     tabl = []
     for i in range(int(x)):
         tabll = []
@@ -55,6 +82,16 @@ def tablero_revelado(x, y):
 
 
 def turno_tablero(tabl, x, y):
+    """
+    Funcion que nos permite imprimir el tablero y a su vez actualizarlo luego de realizar algun
+    movimiento.
+
+    :param tabl: el tablero para el juego
+    :param x: dimensiones del tamaño para el eje x
+    :param y: dimensiones del tamaño para el eje y
+    :return: el tablero actualizado con movimientos aplicados sobre este
+
+    """
     print('  |', end='')
     for i in range(int(y)):
         if i >= 10:
