@@ -7,7 +7,7 @@ class Tablero:
 
     def __init__(self, ancho, largo):
         """
-        crea el tablero con un tamaño indicado
+        construye las dimensiones del tablero
 
         :param ancho: int la anchura del tablero
         :param largo: int la altura del tablero
@@ -19,7 +19,7 @@ class Tablero:
         """
         nos permite crear un tablero aleatorio
 
-        :return: el tablero creado
+        :return: list of list que representa el tablero creado
         """
         tab = []
         for x in range(self.ancho):
