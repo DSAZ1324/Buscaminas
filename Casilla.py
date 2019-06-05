@@ -32,7 +32,6 @@ class Casilla:
 
         :return:el estado en que se encuentra la casilla
         """
-
         return self.estado
 
     def cambiar_estado(self, estado):

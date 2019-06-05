@@ -12,14 +12,14 @@ class TestCasilla(TestCase):
     def test_cambiar_estado(self):
         mi_casilla = Casilla(3, 4)
         mi_casilla.valor = '*'
-        mi_casilla.posible_bomba(True)
+        mi_casilla.cambiar_estado(True)
         espero = False
         resultado = mi_casilla.estado
         self.assertEqual(espero, resultado)
 
         mi_casilla = Casilla(3, 4)
         mi_casilla.valor = ''
-        mi_casilla.posible_bomba(True)
+        mi_casilla.cambiar_estado(True)
         espero = True
         resultado = mi_casilla.estado
         self.assertEqual(espero, resultado)
