@@ -70,7 +70,7 @@ def tablero_revelado(x, y):
 
     :param x: int con las coordenadas del tablero en x
     :param y: int con las corrdenadas del tablero en y
-    :return: list de las jugadas realizadas en el tablero
+    :return: list que representa el tablero
     """
     tabl = []
     for i in range(int(x)):
@@ -87,9 +87,9 @@ def turno_tablero(tabl, x, y):
     movimiento.
 
     :param tabl: el tablero para el juego
-    :param x: dimensiones del tamaño para el eje x
-    :param y: dimensiones del tamaño para el eje y
-    :return: el tablero actualizado con movimientos aplicados sobre este
+    :param x: int que representa las dimensiones del tablero en el eje x
+    :param y: int que representa las dimensiones del tablero en el eje y
+    :return: list of list con los movimientos realizados al tablero
 
     """
     print('  |', end='')
