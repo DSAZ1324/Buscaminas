@@ -68,9 +68,9 @@ def tablero_revelado(x, y):
     """
     Funcion que muestra el tablero aleatorio
 
-    :param x: tablero con minas y numeros para crrdenadas x
-    :param y: tablero con minas y numeros para coordenadas en y
-    :return: el tablero listo para jugar
+    :param x: int con las coordenadas del tablero en x
+    :param y: int con las corrdenadas del tablero en y
+    :return: list de las jugadas realizadas en el tablero
     """
     tabl = []
     for i in range(int(x)):
