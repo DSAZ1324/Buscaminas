@@ -8,10 +8,10 @@ tab = []
 
 def ganar(tab):
     """
-    funcion que permite poder ganar el juego
+    funcion que revisa si el juego a concluido
 
-    :param tab: lista con el tablero asignado
-    :return: la victoria si se logra
+    :param tab: list que representa el  con el tablero asignado
+    :return: bool que repreenta si el juego a concluido efectivamente
     """
     casillas_libres = 0
     casillas_reveladas = 0
@@ -33,8 +33,8 @@ def expandir(tab):
     """
     funcion para expandir en tamaños diferentes el tablero
 
-    :param tab: tablero para expandir
-    :return: tablero expandido
+    :param tab: list of list con el tablero ha expandir
+    :return: list of list con el tablero expandido
     """
     for x in range(len(tab)):
         for y in range(len(tab[0])):
