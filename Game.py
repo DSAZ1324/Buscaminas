@@ -134,7 +134,7 @@ fin = False
 turno_tablero(tab, x, y)
 try:
     while True:
-        opcion = input("Ingrese jugada(Fila, columna, opción[*(Bomba),?(Quizas),R(Remover),P(Presionar)]), o 'Salir: ")
+        opcion = input("Ingrese jugada(Fila, columna, opción[*(Bomba),?(Quizas),q(Quitar),j(Jugada)]), o 'Salir: ")
         if opcion == 'Salir':
             break
         else:
