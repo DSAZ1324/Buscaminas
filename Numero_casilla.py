@@ -5,10 +5,10 @@ class Numero(Casilla):
 
     def __init__(self, x, y):
         """
-        permite ubicar los numeros en las casillas
+        crea los numeros de las casillas
 
-        :param x: int con las numeros ubicados en las coordenadas de x
-        :param y: int con os numeros ubicados en las coordenadas de y
+        :param x: int con los numeros creados en las casillas para x
+        :param y: int con los numeros creados en las casillas para y
         """
         super().__init__(x, y)
         self.contador = 0
@@ -16,7 +16,7 @@ class Numero(Casilla):
 
     def buscar_minas(self, tablero):
         """
-        Funcion que nos permite realizar a busqueda de las minas
+        Funcion las minas que se encuentren al lado de las casillas
 
         :param tablero: list con el tablero asignado
         :return: str con los movimiento realizados para encontrar la mina

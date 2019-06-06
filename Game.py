@@ -31,10 +31,10 @@ def ganar(tab):
 
 def expandir(tab):
     """
-    funcion para expandir en tamaños diferentes el tablero
+    funcion que revela casillas en el buscaminas
 
-    :param tab: list of list con el tablero ha expandir
-    :return: list of list con el tablero expandido
+    :param tab: list of list deltablero
+    :return: list of list con las casillas reveladas
     """
     for x in range(len(tab)):
         for y in range(len(tab[0])):
@@ -48,11 +48,11 @@ def expandir(tab):
 
 def minas_numeros(tab, x, y):
     """
-    Funcion que permite el ingreso de cierta cantidad de minas como de numeros
+    Funcion que identifica cuantas minas hay en el tablero y crea los numeros para recuerdo
 
     :param tab:list of list con el tablero creado
-    :param x:int que representa las minas y los numeros en el tablero para el eje x
-    :param y: int que represena las minas y los numeros en el tablero para el eje y
+    :param x:int con los parametros de minas y numeros en el tablero para x
+    :param y: int con los parametros de minas y numeros en el tablero para y
     :return: list of list de tablero con las parametros de minas y numeros
     """
     for i in range(int(x)):
@@ -66,11 +66,11 @@ def minas_numeros(tab, x, y):
 
 def tablero_revelado(x, y):
     """
-    Funcion que muestra el tablero aleatorio
+    Funcion que crea los estados de las casillas
 
     :param x: int con las coordenadas del tablero en x
     :param y: int con las corrdenadas del tablero en y
-    :return: list que representa el tablero
+    :return: list con los estados de las casillas
     """
     tabl = []
     for i in range(int(x)):

@@ -5,8 +5,7 @@ class Mina(Casilla):
 
     def __init__(self, x, y):
         """
-        Nos permite ubicar las minas en el tablero en las coordenas de x como del eje y
-        para cada una de las casillas.
+        crea las minas en el tablero
 
         :param x: int con las minas ubicadas para el eje en x
         :param y: int con las minas unicadas para el eje en y
