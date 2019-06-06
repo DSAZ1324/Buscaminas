@@ -21,14 +21,14 @@ class Casilla:
 
     def numero(self):
         """
-        el numero de la casilla
+        retorna el numero de la casilla
         :return: int que representa el estado del numero en la casilla
         """
         return self.num
 
     def estado(self):
         """
-        estado actual de la casilla
+        retorna el estado actual de la casilla
 
         :return: bool que representa el estado en que se encuentra la casilla
         """
@@ -62,7 +62,7 @@ class Casilla:
 
     def opcion(self):
         """
-        permite validar la opciones dentro de una casilla
+        retorna las opciones dentro de una casilla
 
         :return: str que representa la opcion de la casilla
         """
