@@ -66,11 +66,11 @@ def minas_numeros(tab, x, y):
 
 def tablero_revelado(x, y):
     """
-    Funcion que crea los estados de las casillas
+    Funcios que realza la creacion del tablero numerico
 
     :param x: int con las coordenadas del tablero en x
     :param y: int con las corrdenadas del tablero en y
-    :return: list con los estados de las casillas
+    :return: list con la numeros en el tablero
     """
     tabl = []
     for i in range(int(x)):
